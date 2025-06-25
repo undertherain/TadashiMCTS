@@ -5,11 +5,11 @@ import time
 from pathlib import Path
 from timeit import repeat
 
+# import config
 from tadashi import TrEnum
 from tadashi.apps import Polybench, Simple
 
-from mcts import config
-from mcts.optimize import optimize_app
+from .optimize import optimize_app
 
 
 def get_args():
@@ -32,7 +32,7 @@ def main():
     # logger.info('message')
     args = get_args()
     random.seed(args.seed)
-    base = "examples/polybench"
+    base = "/home/blackbird/Projects_heavy/CodeGen/PolyBenchC-4.2.1 "
     app = Polybench(
         args.benchmark,
         Path(base),
@@ -60,7 +60,5 @@ def main():
     print("all done")
 
 
-
 if __name__ == "__main__":
     main()
-

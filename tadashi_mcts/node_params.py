@@ -2,8 +2,8 @@ from itertools import product
 
 from tadashi import TRANSFORMATIONS, LowerUpperBound, TrEnum
 
-import mcts.node_node
-from mcts import config
+import tadashi_mcts.node_node
+from tadashi_mcts import config
 
 from .base import MCTSNode
 

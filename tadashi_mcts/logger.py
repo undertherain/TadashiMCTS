@@ -1,7 +1,7 @@
 import datetime
 import json
 
-from mcts import config
+from tadashi_mcts import config
 
 
 class TimestampedJsonLogger:

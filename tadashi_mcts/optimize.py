@@ -1,8 +1,9 @@
 # from .node_root import MCTSNode_Root
 from timeit import default_timer as timer
 
-import mcts.node_root
-from mcts import config
+import tadashi_mcts.node_root
+
+from . import config
 
 
 def optimize_app(

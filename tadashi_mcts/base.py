@@ -3,7 +3,7 @@ import random
 
 from colorama import Fore, Style
 
-from mcts import config
+from tadashi_mcts import config
 
 
 class MCTSNode:

@@ -1,8 +1,8 @@
 from tadashi import TrEnum
 
-import mcts.base
-import mcts.node_params
-from mcts import config
+import tadashi_mcts.base
+import tadashi_mcts.node_params
+from tadashi_mcts import config
 
 # import MCTSNode
 
@@ -10,7 +10,7 @@ from mcts import config
 scop_idx = config["scop_idx"]
 
 
-class MCTSNode_Transformation(mcts.base.MCTSNode):
+class MCTSNode_Transformation(tadashi_mcts.base.MCTSNode):
     def set_up_children(self):
         if self.children:
             return

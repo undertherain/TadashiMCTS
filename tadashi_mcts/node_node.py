@@ -3,16 +3,16 @@ from subprocess import TimeoutExpired
 
 from colorama import Fore, Style
 
-import mcts.base
-import mcts.node_transformation
-from mcts import config
+import tadashi_mcts.base
+import tadashi_mcts.node_transformation
+from tadashi_mcts import config
 
 scop_idx = config["scop_idx"]
 
 
 # This is a bit confusing, but the name implies that we are on a level where we are
 # SELECTING node, maybe I should shift naming
-class MCTSNode_Node(mcts.base.MCTSNode):
+class MCTSNode_Node(tadashi_mcts.base.MCTSNode):
 
     def set_actions_from_nodes(self):
         nodes = self.app.scops[scop_idx].schedule_tree
